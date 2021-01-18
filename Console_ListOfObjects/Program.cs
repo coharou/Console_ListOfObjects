@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Console_ListOfObjects
 {
@@ -29,6 +30,20 @@ namespace Console_ListOfObjects
             List<Books> bookList = new List<Books>();
             AddObjects(bookList);
             DisplayObjects(bookList);
+            SaveObjects(bookList);
+        }
+
+        private static void SaveObjects(List<Books> bookList)
+        {
+            int i = -1;
+            int bookNum = bookList.Count;
+            string[] fileBookArray = new string[bookNum];
+            foreach (var book in bookList)
+            {
+                i++;
+                fileBookArray[i] = $"{book.Title}: {book.Author}, {book.Pages.ToString()}, {book.ReleaseYear.ToString()}, {book.GenreType.ToString()} -- ";
+            }
+            File.WriteAllLines(@"Data\Books.txt", fileBookArray);
         }
 
         static void AddObjects(List<Books> bookList)
@@ -162,10 +177,10 @@ namespace Console_ListOfObjects
             string author;
             do
             {
-                AddObjectsTextHeader("Please enter a title: ");
+                AddObjectsTextHeader("Please enter an author: ");
                 author = Console.ReadLine();
                 Console.WriteLine();
-                Console.WriteLine($"Is '{author}' the title that you wanted?");
+                Console.WriteLine($"Is '{author}' the author that you wanted?");
                 correctAuthor = DualConfirmation();
             } while (correctAuthor == false);
             return author;

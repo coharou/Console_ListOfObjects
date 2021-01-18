@@ -1,0 +1,7 @@
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\bin\Release\Console_ListOfObjects.exe.config
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\bin\Release\Console_ListOfObjects.exe
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\bin\Release\Console_ListOfObjects.pdb
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\obj\Release\Console_ListOfObjects.csprojAssemblyReference.cache
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\obj\Release\Console_ListOfObjects.csproj.CoreCompileInputs.cache
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\obj\Release\Console_ListOfObjects.exe
+C:\Users\coharou\source\repos\Console_ListOfObjects\Console_ListOfObjects\obj\Release\Console_ListOfObjects.pdb
